@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>axios基本使用</title>
+<style>
+    .active{
+        border: 1px solid red;
+    }
+</style>
+</head>
+
+<body>
+    <input type="button" value="get请求" class="get">
+    <input type="button" value="post请求" class="post">
+
+    <!-- 官网提供的 axios 在线地址 -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+        <!-- 开发环境 -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script>
+      
+      document.querySelector(".get").onclick = function(){
+        //    axios.get("https://autumnfish.cn/api/joke/list?num=3")
+        axios.get("https://autumnfish.cn/api/joke/list12333?num=3")
+           .then(function(response){
+               console.log(response);
+           },function(err){
+               console.log(err);
+           })
+       }
+
+       document.querySelector(".post").onclick = function(){
+        axios.post("https://autumnfish.cn/api/user/reg",
+        {username:"盐焗西蓝花"})
+        .then(function(response){
+            console.log(response);
+        },function(err){
+            console.log(err);
+        })
+       }
+    </script>
+</body>
+
+
+</html>

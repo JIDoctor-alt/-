@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vue基础</title>
+<style>
+    .active{
+        border: 1px solid red;
+    }
+</style>
+</head>
+
+<body>
+    <div id="mask">
+        <div class = "center">
+            <h2 class="title">
+                <p text="深圳创维校区"></p>
+            </h2>
+
+          
+            <!-- <a href="javascript:void(0)" v-show="index != 0" @click="prev"
+             class="left">
+             <p><<<--------</p>
+            </a> -->
+
+            <a href="javascript:void(0)" v-if="index != 0" @click="prev"
+            class="left">
+            <p><<<--------</p>
+           </a>
+
+                <p v-text="imgArr[index]"></p>
+            <a href="javascript:void(0)" v-show="index < imgArr.length-1" @click="next"
+             class="right">
+                <p>->>>></p>
+            </a>
+        </div>
+    </div>
+    
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el:"#mask",
+            data:{
+                imgArr:[
+                    "asfasdf",
+                    "sfasf",
+                    "sfafa",
+                    "afdasf",
+                    "sfafafdasss",
+            ],
+            index: 0
+            },
+            methods:{
+                prev:function(){
+                    this.index--;
+                },
+                next:function(){
+                    this.index++;
+                }
+            }
+        })
+    </script>
+</body>
+
+
+</html>
