@@ -10,7 +10,7 @@
 <body>
 
 <div class="container-fluid p-5 bg-primary text-white text-center">
-  <h1>我的第一个Bootstrap页面</h1>
+  <h1>我的第一个GitPages页面</h1>
   <p>这是一个响应式页面，重置浏览器大小查看效果！</p>
 </div>
 
