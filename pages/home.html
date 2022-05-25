@@ -19,8 +19,32 @@
 <br>
 
 <div class="container p-5 my-5 border">
-    <h1>容器 填充顶部内边距 边框</h1>
-    <p>这个容器有一个边框和一些边距。</p>
+    <h1>HTML 教程（HTML5标准）</h1>
+    <p>超文本标记语言（英语：HyperText Markup Language,简称：HTML）是一种用于创建网页的标准标记语言。<br>您可以使用HTML来建立自己的WEB站点，HTML运行在浏览器上，由浏览器来解析。</p>
+    <hr>
+    <h1>HTML实例</h1>
+    <p>注意：对于中文网页需要使用<xmp><meta charset="utf-8"></xmp>声明编码，否则会出现乱码。有些浏览器（如360浏览器）会设置GBK为默认编码，则你需要设置为&lt;meta charset="gbk"&gt。</p>
+    
+    <b>HTML中显示HTML源代码</b>
+    <br>
+    <br>
+    <p><textarea style="color: red;" rows="5" cols="80">要在HTML代码中放置html文本显然是不行的，因为放在HTML中的html文本会相互混淆起来，产生严重的错误。如果html文本很少，可以将其中“<>”用全角“<>”代替。
+    如果文本很长，可以将它们放在标签<xmp>和</xmp>中，这是专门用来显示html文本的标签。还可以使用& lt;表示“<”,用& gt;表示">"</textarea> </p>
+     <hr>
+     <h2>实例</h2>
+     <div class="row  border">
+        <div class="col p-5  border">
+            <xmp>
+                <h1>我的第一个标题</h1>
+                <p>我的第一个段落。</p>
+            </xmp>
+         </div>
+         <div class="col p-5 border">
+            <h1>我的第一个标题</h1>
+            <p>我的第一个段落。</p>
+         </div>
+     </div>
+     
 </div>
 <div class="container p-5 my-5 bg-dark text-white">
     <h1>我的第一个Bootstrap页面</h1>
